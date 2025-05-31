@@ -1,0 +1,126 @@
+body {
+ background-color: #502419;
+ font-family: 'Rockwell Extra Bold';
+ color: white;
+}
+
+h1 {
+ text-align: center;
+ color: orange;
+ font-size: 50px;
+ font-family: 'Rockwell Extra Bold';
+}
+
+h2 {
+ text-align: center;
+ color: white;
+ background-color: orange;
+ padding-left: 10px;
+}
+
+h3 {
+ text-align: left;
+ color: orange;
+ padding-left: 10px;
+}
+
+
+
+figure { margin-left: 0;}
+
+#menueleiste li {
+ text-align: center;
+ background-color: orange;
+ padding: 6px;
+ margin: 10px;
+ border: 2px solid #cc0000;
+ list-style-type: none;
+ float: left;
+ width: 150px;
+}
+
+#ctas li {
+ list-style-type: none;
+ float: left;
+ width: 150px;
+ margin-bottom: 20px;
+}
+
+.slogans {
+ text-align: center;
+}
+
+.doener-icon {
+ text-align: center;
+ font-size: 100px;
+ transition: transform 0.7s;
+}
+
+.doener-icon:hover {
+ transform: rotate(360deg);
+}
+
+.container {
+   text-align: center;
+}
+
+.dancing-doener {
+  text-align: center;
+  display: inline-block;
+  font-size: 100px;
+  animation: dance 1s infinite alternate;
+}
+
+@keyframes dance {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+
+.joke-text {
+  display: none;
+  font-size: 18px;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+#joke-toggle:checked + #joke-btn + .joke-text {
+  display: block;
+  text-align: center;
+  border: none;
+}
+
+#joke-btn {
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#joke-btn:hover {
+  background-color: white;
+  color: orange;
+}
+
+
+.float-ende { clear: both }
+
+canvas {
+    border: 2px solid black;
+}
+

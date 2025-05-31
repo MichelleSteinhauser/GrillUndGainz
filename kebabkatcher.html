@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebab Katcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { 
+            text-align: center; 
+            background: #f4e7d4; 
+            /* overflow: hidden; entfernt für besseres Scrolling */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        #game {
+            position: relative; 
+            width: 400px; 
+            height: 500px; 
+            border: 2px solid #000; 
+            margin: 20px auto; 
+            background: lightgray; 
+            display: none; /* bleibt verborgen bis Start */
+        }
+        .doner {
+            position: absolute; /* Tippfehler korrigiert */
+            width: 40px;
+            height: 40px;
+            background: url('images/doner.png') no-repeat center center;
+            background-size: contain;
+        }
+        #box {
+            position: absolute; 
+            bottom: 10px; 
+            left: 180px; 
+            width: 60px; 
+            height: 40px; 
+            background: brown; 
+            border-radius: 10px;
+        }
+        #startButton {
+            font-size: 20px; 
+            padding: 10px 20px; 
+            margin-top: 20px; 
+            cursor: pointer; 
+            background: green; 
+            color: white; 
+            border: none; 
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        #startButton:hover {
+            background-color: darkgreen;
+        }
+        nav ul#menueleiste {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            background: #502419;
+            border-radius: 5px;
+        }
+        nav ul#menueleiste li {
+            display: inline-block;
+        }
+        nav ul#menueleiste li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        nav ul#menueleiste li a:hover {
+            background-color: orange;
+            color: #502419;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul id="menueleiste">
+            <li><a href="drehdichfitundhebdenspieß.html">Dreh' dich fit & Heb' den Spieß</a></li>
+            <li><a href="gainsmitgeschmack.html">Gains mit Geschmack</a></li>
+            <li><a href="fleischfladenfakten.html">Fleisch - Fladen - Fakten</a></li>
+            <li><a href="doenerrankingrgb.html">Döner-Ranking Rgb</a></li>
+            <li><a href="kebabkatcher.html">Kebab Katcher</a></li>
+            <li><a href="index.html">Zurück zum Grill</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="scoreDisplay" style="color: brown; font-size: 24px; font-family: Rockwell Extra Bold; margin-top: 10px;">
+  Punkte: 0
+</div>
+
+
+<h1>Fange die Döner! 🥙</h1>
+<button id="startButton">Start</button>
+<div id="game">
+    <div id="box"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
