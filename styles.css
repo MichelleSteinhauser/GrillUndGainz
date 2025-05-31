@@ -124,3 +124,14 @@ canvas {
     border: 2px solid black;
 }
 
+/* Zentrierung für Überschriften, Text und Bild */
+article {
+    text-align: center;
+}
+
+article img {
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+    height: auto;
+}
