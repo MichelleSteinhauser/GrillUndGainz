@@ -15,38 +15,34 @@ body {
 
 /* Menüleiste */
 #menueleiste {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  list-style: none;
-  margin: 1rem 0;
-  gap: 0.5rem;
-  overflow-x: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
 }
 
 #menueleiste li {
-  flex: 1;
-  background-color: orange;
-  border: 2px solid #cc0000;
-  text-align: center;
-  padding: 1rem 0.5rem;
-  font-weight: bold;
-  min-height: 80px; /* Einheitliche Höhe */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    flex: 1 1 45%;
 }
 
 #menueleiste a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
-  display: block;
-  width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #ffdf91;
+    color: #2c2c2c;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
 }
 
 #menueleiste a:hover {
-  color: #502419;
+    background-color: #ffcc66;
 }
 
 /* Überschriften */
