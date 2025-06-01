@@ -20,9 +20,10 @@ document.addEventListener("keydown", (e) => {
     if(e.key === "ArrowLeft" && box.offsetLeft > 0) {
         box.style.left = box.offsetLeft - 20 + "px";
     }
-    if(e.key === "ArrowRight" && box.offsetLeft < 340) {
-        box.style.left = box.offsetLeft + 20 + "px";
-    }
+if (e.key === "ArrowRight" && box.offsetLeft < 340) {
+    box.style.left = box.offsetLeft + 20 + "px";
+}
+
 });
 
 game.addEventListener("touchmove", (e) => {

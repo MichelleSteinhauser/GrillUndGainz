@@ -8,7 +8,7 @@
     <style>
         body { 
             text-align: center; 
-            background: #f4e7d4; 
+            background: #502419; 
             margin: 0;
             font-family: Arial, sans-serif;
         }
@@ -33,9 +33,7 @@
             width: 100%;
             max-width: 600px;
             height: 500px;
-            border: 2px solid #000;
             margin: 20px auto;
-            background: lightgray;
             display: none;
         }
 
@@ -47,16 +45,15 @@
             background-size: contain;
         }
 
-        #box {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 40px;
-            background: brown;
-            border-radius: 10px;
-        }
+#box {
+    position: absolute;
+    bottom: 0;
+    left: 160px; /* Startposition mittig im 400px breiten Spielfeld */
+    width: 60px;
+    height: auto;
+    z-index: 2;
+}
+
 
         #startButton {
             font-size: 20px;
@@ -99,7 +96,8 @@
 <button id="startButton">Start</button>
 
 <div id="game">
-    <div id="box"></div>
+    <img id="box" src="Pacman.png" alt="Fänger" />
+
 </div>
 
 <script src="script.js"></script>
