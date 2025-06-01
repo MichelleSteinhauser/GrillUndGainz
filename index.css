@@ -140,14 +140,21 @@ table td {
     font-size: 1.2rem;
   }
 
-  #menueleiste {
-    flex-wrap: wrap;
-  }
+    #menueleiste {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  #menueleiste li {
-    flex: 1 1 45%;
-    min-width: 140px;
-  }
+    #menueleiste li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    #menueleiste a {
+        display: inline-block;
+        width: 80%;
+    }
 
   p {
     font-size: 0.95rem;
