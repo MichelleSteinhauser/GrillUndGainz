@@ -1,0 +1,159 @@
+/* Grundlegendes Layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #502419;
+  color: white;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Menüleiste */
+#menueleiste {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 1rem 0;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+
+#menueleiste li {
+  flex: 1;
+  background-color: orange;
+  border: 2px solid #cc0000;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  font-weight: bold;
+  min-height: 80px; /* Einheitliche Höhe */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menueleiste a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  width: 100%;
+}
+
+#menueleiste a:hover {
+  color: #502419;
+}
+
+/* Überschriften */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: orange;
+  margin: 2rem 0 1rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* Textabschnitte */
+p {
+  text-align: center;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  padding: 0 1rem;
+}
+
+/* Döner-Icon */
+.doener-icon {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* Tabelle */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: #fff;
+  color: #502419;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #502419;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Witzbutton */
+#joke-btn {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem auto 0;
+  background-color: orange;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#joke-btn:hover {
+  background-color: darkorange;
+}
+
+/* Witztext */
+.joke-text {
+  display: none;
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #f8e3b4;
+  color: #502419;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+
+#joke-toggle:checked + #joke-btn + .joke-text {
+  display: block;
+}
+
+/* Responsive Verhalten */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #menueleiste {
+    flex-wrap: wrap;
+  }
+
+  #menueleiste li {
+    flex: 1 1 45%;
+    min-width: 140px;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
