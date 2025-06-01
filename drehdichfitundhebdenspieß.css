@@ -47,23 +47,27 @@ body {
 
 /* Überschriften & Text */
 /* Überschriften */
-h1 {
+h1, h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    color: #8b0000;
+    margin: 20px 10px 10px;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.4em;
 }
 
-h3 {
+/* Text */
+p {
     text-align: center;
-    font-size: 1.3rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1em;
+    padding: 0 10px;
 }
 
 /* Paragraphen */
