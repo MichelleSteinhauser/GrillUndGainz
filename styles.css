@@ -57,6 +57,19 @@ figure { margin-left: 0;}
   }
 }
 
+#menueleiste a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+
+}
+
+#menueleiste a:hover {
+  color: #502419; /* z. B. passende Hover-Farbe */
+}
+
+
 
 #ctas li {
  list-style-type: none;

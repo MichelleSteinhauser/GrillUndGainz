@@ -38,7 +38,7 @@ game.addEventListener("touchmove", (e) => {
 });
 
 function dropDoner() {
-    if(!gameRunning) return;
+    if (!gameRunning) return;
 
     let doner = document.createElement("img");
     doner.src = "Doener.png";
@@ -47,18 +47,26 @@ function dropDoner() {
     doner.style.top = "0px";
     game.appendChild(doner);
 
-    let interval = setInterval (() => {
+    let interval = setInterval(() => {
         doner.style.top = doner.offsetTop + 5 + "px";
 
-    if(doner.offsetTop > 460 && Math.abs(doner.offsetLeft - box.offsetLeft) <40) {
-        score++;
-        document.getElementById("scoreDisplay").textContent = "Punkte: " + score;
-        clearInterval(interval);
-        doner.remove();
-    }
-    else if (doner.offsetTop > 480) {
-        clearInterval(interval);
-        doner.remove();
-    }
+        let donerRect = doner.getBoundingClientRect();
+        let boxRect = box.getBoundingClientRect();
+
+        if (
+            donerRect.bottom >= boxRect.top &&
+            donerRect.top <= boxRect.bottom &&
+            donerRect.left <= boxRect.right &&
+            donerRect.right >= boxRect.left
+        ) {
+            score++;
+            document.getElementById("scoreDisplay").textContent = "Punkte: " + score;
+            clearInterval(interval);
+            doner.remove();
+        } else if (doner.offsetTop > game.offsetHeight) {
+            clearInterval(interval);
+            doner.remove();
+        }
     }, 50);
 }
+

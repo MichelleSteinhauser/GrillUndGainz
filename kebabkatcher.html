@@ -9,48 +9,102 @@
         body { 
             text-align: center; 
             background: #f4e7d4; 
-            /* overflow: hidden; entfernt für besseres Scrolling */
             margin: 0;
             font-family: Arial, sans-serif;
         }
 
-        
-        #game {
-            position: relative; 
-            width: 400px; 
-            height: 500px; 
-            border: 2px solid #000; 
-            margin: 20px auto; 
-            background: lightgray; 
-            display: none; /* bleibt verborgen bis Start */
+        nav ul#menueleiste {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
         }
+
+        nav ul#menueleiste li {
+            list-style: none;
+            background-color: orange;
+            padding: 6px;
+            margin: 10px;
+            border: 2px solid #cc0000;
+            width: 150px;
+            text-align: center;
+        }
+
+        nav ul#menueleiste li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            nav ul#menueleiste {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul#menueleiste li {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        h1 {
+            color: orange;
+            font-family: 'Rockwell Extra Bold';
+            font-size: 40px;
+            margin-top: 1em;
+        }
+
+        #scoreDisplay {
+            color: brown;
+            font-size: 24px;
+            font-family: 'Rockwell Extra Bold';
+            margin: 10px 0;
+        }
+
+        #game {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 500px;
+            border: 2px solid #000;
+            margin: 20px auto;
+            background: lightgray;
+            display: none;
+        }
+
         .doner {
-            position: absolute; /* Tippfehler korrigiert */
+            position: absolute;
             width: 40px;
             height: 40px;
             background: url('images/doner.png') no-repeat center center;
             background-size: contain;
         }
+
         #box {
-            position: absolute; 
-            bottom: 10px; 
-            left: 180px; 
-            width: 60px; 
-            height: 40px; 
-            background: brown; 
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 40px;
+            background: brown;
             border-radius: 10px;
         }
+
         #startButton {
-            font-size: 20px; 
-            padding: 10px 20px; 
-            margin-top: 20px; 
-            cursor: pointer; 
-            background: green; 
-            color: white; 
-            border: none; 
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            background: green;
+            color: white;
+            border: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
+
         #startButton:hover {
             background-color: darkgreen;
         }
@@ -59,24 +113,22 @@
 
 <body>
 
-<ul id="menueleiste">
-    <li><a href="drehdichfitundhebdenspieß.html">Dreh' dich fit & Heb' den Spieß</a></li>
-    <li><a href="gainsmitgeschmack.html">Gains mit Geschmack</a></li>
-    <li><a href="fleischfladenfakten.html">Fleisch - Fladen - Fakten</a></li>
-    <li><a href="doenerrankingrgb.html">Döner-Ranking Rgb</a></li>
-    <li><a href="kebabkatcher.html">Kebab Katcher</a></li>
-    <li><a href="index.html">Zurück zum Grill</a></li>
-</ul>
-
-<br>
-<br>
+<nav>
+    <ul id="menueleiste">
+        <li><a href="drehdichfitundhebdenspieß.html">Dreh' dich fit & Heb' den Spieß</a></li>
+        <li><a href="gainsmitgeschmack.html">Gains mit Geschmack</a></li>
+        <li><a href="fleischfladenfakten.html">Fleisch - Fladen - Fakten</a></li>
+        <li><a href="doenerrankingrgb.html">Döner-Ranking Rgb</a></li>
+        <li><a href="kebabkatcher.html">Kebab Katcher</a></li>
+        <li><a href="index.html">Zurück zum Grill</a></li>
+    </ul>
+</nav>
 
 <h1>Fange die Döner! 🥙</h1>
-<div id="scoreDisplay" style="color: brown; font-size: 24px; font-family: Rockwell Extra Bold; margin-top: 10px;">
-  Punkte: 0
-</div>
+<div id="scoreDisplay">Punkte: 0</div>
 
 <button id="startButton">Start</button>
+
 <div id="game">
     <div id="box"></div>
 </div>
