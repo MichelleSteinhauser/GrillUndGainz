@@ -70,6 +70,30 @@
         #startButton:hover {
             background-color: darkgreen;
         }
+
+        /* Navigation horizontal statt vertikal */
+#menueleiste {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Für kleinere Bildschirme, Umbruch erlaubt */
+    justify-content: center;
+}
+
+#menueleiste li {
+    margin: 5px 10px;
+}
+
+#menueleiste a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
     </style>
 </head>
 
