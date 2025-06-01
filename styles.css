@@ -1,7 +1,13 @@
 body {
- background-color: #502419;
- font-family: 'Rockwell Extra Bold';
- color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #502419;
+  color: white;
 }
 
 h1 {
@@ -39,23 +45,11 @@ figure { margin-left: 0;}
  width: 150px;
 }
 
-@media (max-width: 600px) {
-  nav ul#menueleiste {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul#menueleiste li {
-    width: 90%;
-    text-align: 5px 0;
-  }
 
   nav ul#menueleiste li a {
     display: block;
     padding: 12px;
   }
-}
 
 #menueleiste a {
   color: white;
@@ -219,14 +213,15 @@ p {
             margin: 10px 0;
         }
 
-        #game {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            height: 500px;
-            margin: 20px auto;
-            display: none;
-        }
+#game {
+  width: 100%;
+  max-width: 600px;
+  height: 60vh; /* passt sich an Bildschirmhöhe an */
+  margin: 20px auto;
+  position: relative;
+  display: none;
+  background-color: #fff3; /* optional Hintergrundfarbe fürs Spiel */
+}
 
         .doner {
             position: absolute;
