@@ -34,33 +34,30 @@ h3 {
 
 figure { margin-left: 0;}
 
-#menueleiste {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  overflow-x: auto; /* wichtig für kleine Bildschirme */
-  list-style-type: none;
-  background-color: #502419;
+#menueleiste li {
+ text-align: center;
+ background-color: orange;
+ padding: 6px;
+ margin: 10px;
+ border: 2px solid #cc0000;
+ list-style-type: none;
+ float: left;
+ width: 150px;
 }
 
-#menueleiste li {
-  flex: 0 0 auto; /* verhindert, dass sie umbrechen */
-  margin: 0 5px;
-  padding: 10px;
-  border: 2px solid #cc0000;
-}
+
+  nav ul#menueleiste li a {
+    display: block;
+    padding: 12px;
+  }
 
 #menueleiste a {
   color: white;
   text-decoration: none;
-  font-size: 15px;
   font-family: Arial, sans-serif;
-  display: block;
-  white-space: nowrap;
-}
+  font-size: 15px;
 
+}
 
 #menueleiste a:hover {
   color: #502419; /* z. B. passende Hover-Farbe */
