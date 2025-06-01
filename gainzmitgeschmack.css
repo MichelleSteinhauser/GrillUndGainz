@@ -1,0 +1,139 @@
+/* Einheitliche Schrift und Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
+    color: #2c2c2c;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* Menüleiste */
+#menueleiste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+#menueleiste li {
+    flex: 1 1 45%;
+}
+
+#menueleiste a {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #ffdf91;
+    color: #2c2c2c;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+#menueleiste a:hover {
+    background-color: #ffcc66;
+}
+
+/* Überschriften */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphen */
+p {
+    text-align: center;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+}
+
+/* Döner-Icons */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.dancing-doener {
+    font-size: 2.5rem;
+    animation: dance 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes dance {
+    from { transform: translateY(0); }
+    to { transform: translateY(-15px); }
+}
+
+/* Tabellen */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+td {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    text-align: center;
+}
+
+td a {
+    color: #0047ab;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Für kleinere Bildschirme */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p, td {
+        font-size: 0.95rem;
+    }
+
+    #menueleiste li {
+        flex: 1 1 100%;
+    }
+}
