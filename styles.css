@@ -69,6 +69,10 @@ figure { margin-left: 0;}
   color: #502419; /* z. B. passende Hover-Farbe */
 }
 
+nav {
+    width: 100%;
+}
+
 
 
 #ctas li {
@@ -203,3 +207,64 @@ p {
   box-sizing: border-box;
 }
 
+
+
+
+
+
+        #scoreDisplay {
+            color: brown;
+            font-size: 24px;
+            font-family: 'Rockwell Extra Bold';
+            margin: 10px 0;
+        }
+
+        #game {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 500px;
+            margin: 20px auto;
+            display: none;
+        }
+
+        .doner {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: url('images/doner.png') no-repeat center center;
+            background-size: contain;
+        }
+
+#box {
+    position: absolute;
+    bottom: 0;
+    left: 160px; /* Startposition mittig im 400px breiten Spielfeld */
+    width: 60px;
+    height: auto;
+    z-index: 2;
+}
+
+
+        #startButton {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #startButton:hover {
+            background-color: darkgreen;
+        }
+
+
+#scoreDisplay {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
