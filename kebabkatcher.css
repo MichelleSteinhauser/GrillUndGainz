@@ -13,34 +13,34 @@ body {
 
 /* Menüleiste */
 #menueleiste {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #8b0000;
-    padding: 1rem;
-    gap: 1rem;
+    justify-content: space-between;
+    list-style: none;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
 }
 
 #menueleiste li {
-    flex: 1 1 150px;
-    text-align: center;
+    flex: 1 1 45%;
 }
 
 #menueleiste a {
     display: block;
-    padding: 1rem;
-    color: white;
-    background-color: #b22222;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #ffdf91;
+    color: #2c2c2c;
     text-decoration: none;
-    font-weight: 600;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-    height: 100%;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
 }
 
 #menueleiste a:hover {
-    background-color: #a11c1c;
+    background-color: #ffcc66;
 }
 
 /* Hauptüberschrift und Punktestand */
