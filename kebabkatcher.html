@@ -13,41 +13,6 @@
             font-family: Arial, sans-serif;
         }
 
-        nav ul#menueleiste {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul#menueleiste li {
-            list-style: none;
-            background-color: orange;
-            padding: 6px;
-            margin: 10px;
-            border: 2px solid #cc0000;
-            width: 150px;
-            text-align: center;
-        }
-
-        nav ul#menueleiste li a {
-            text-decoration: none;
-            color: white;
-            display: block;
-        }
-
-        @media (max-width: 600px) {
-            nav ul#menueleiste {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul#menueleiste li {
-                width: 100%;
-                box-sizing: border-box;
-            }
-        }
 
         h1 {
             color: orange;
@@ -113,16 +78,20 @@
 
 <body>
 
-<nav>
-    <ul id="menueleiste">
-        <li><a href="drehdichfitundhebdenspieß.html">Dreh' dich fit & Heb' den Spieß</a></li>
-        <li><a href="gainsmitgeschmack.html">Gains mit Geschmack</a></li>
-        <li><a href="fleischfladenfakten.html">Fleisch - Fladen - Fakten</a></li>
-        <li><a href="doenerrankingrgb.html">Döner-Ranking Rgb</a></li>
-        <li><a href="kebabkatcher.html">Kebab Katcher</a></li>
-        <li><a href="index.html">Zurück zum Grill</a></li>
-    </ul>
-</nav>
+<header>
+    <nav>
+        <ul id="menueleiste">
+            <li><a href="drehdichfitundhebdenspieß.html">Dreh' dich fit & Heb' den Spieß</a></li>
+            <li><a href="gainsmitgeschmack.html">Gains mit Geschmack</a></li>
+            <li><a href="fleischfladenfakten.html">Fleisch - Fladen - Fakten</a></li>
+            <li><a href="doenerrankingrgb.html">Döner-Ranking Rgb</a></li>
+            <li><a href="kebabkatcher.html">Kebab Katcher</a></li>
+            <li><a href="index.html">Zurück zum Grill</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr class="float-ende">
 
 <h1>Fange die Döner! 🥙</h1>
 <div id="scoreDisplay">Punkte: 0</div>
