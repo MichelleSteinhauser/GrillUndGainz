@@ -119,19 +119,12 @@ h3 {
         font-size: 0.9em;
     }
 
-    #menueleiste {
-        flex-direction: column;
-        align-items: center;
-    }
+  #menueleiste {
+    flex-wrap: wrap;
+  }
 
-    #menueleiste li {
-        width: 100%;
-        text-align: center;
-        margin: 5px 0;
-    }
-
-    #menueleiste a {
-        display: inline-block;
-        width: 80%;
-    }
+  #menueleiste li {
+    flex: 1 1 45%;
+    min-width: 140px;
+  }
 }
